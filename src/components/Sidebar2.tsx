@@ -24,8 +24,7 @@ function Sidebar2() {
                     <li>
                         
                     </li>
-                    <li>
-                        <Link to="/reachus" className="nav-link" style={{ color: 'black' }}>
+                    <li><Link to="/reachus" className="nav-link" style={{ color: 'black' }}>
                             <svg className="bi pe-none me-2" width="16" height="16">
                                 <use xlinkHref="/help"></use>
                             </svg>
@@ -36,7 +35,7 @@ function Sidebar2() {
                             <svg className="bi pe-none me-2" width="16" height="16">
                                 <use xlinkHref="#table"></use>
                             </svg>
-                            Learn more
+                            Contact us
                         </Link>
                     
                 </ul>

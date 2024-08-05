@@ -5,7 +5,6 @@ import Navbar3 from './Navbar3';
 import TypingAnimation from './Typing';
 import FileUpload from './FileUpload';
 
-// Define a type for the dataset
 interface Dataset {
   _id: string;
   title: string;
@@ -21,7 +20,7 @@ const SellingPage: React.FC = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:5000/user/dataset/${id}`)
+        .get(`https://data-vault-lmr7.vercel.app/user/dataset/${id}`)
         .then((response) => {
           setDetails(response.data);
         })

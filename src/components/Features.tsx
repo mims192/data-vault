@@ -11,11 +11,11 @@ const Features: React.FC = () => {
   console.log('Features section in view:', inView);
 
   return (     //borderTop:"1px solid gray",borderBottom:"1px solid gray"
-    <div id="section3" ref={ref} style={{ marginTop: '8vh'}}> 
+    <div id="section3" ref={ref} style={{ marginTop: '5vh'}}> 
     <h1 className='text-4xl text-white text-center font-semibold'>Features</h1>
       {inView && (
         <GradualSpacing duration={1} className="row g-4 py-5 row-cols-1 row-cols-lg-3 ml-10 mr-10">
-          <div className="col d-flex align-items-start bg-cyan-800" >
+          <div className="col d-flex align-items-start bg-cyan-500" >
             <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
               <svg className="bi" width="1em" height="1em" fill="currentColor">
                 <use xlinkHref="#bi-arrow-left-right"></use>

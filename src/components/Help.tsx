@@ -1,10 +1,12 @@
 'use client'
 
 import React, { useState } from 'react'
+import Navbar3 from './Navbar3'
 
 export default function Example() {
   return (
     <div id="section1" className='mt-0'>
+      <Navbar3/>
       <div className="isolate bg-gray-100 py-16 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Doubts? Contact Us</h2>
