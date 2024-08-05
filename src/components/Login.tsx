@@ -26,7 +26,7 @@ const Login: React.FC = () => {
     };
 
     try {
-      const res = await axios.post("https://data-vault-lmr7.vercel.app//user/login", userInfo); 
+      const res = await axios.post("http://localhost:5000/user/login", userInfo); 
       console.log(res.data);
       if (res.data) {
         toast.success("Login successfully");

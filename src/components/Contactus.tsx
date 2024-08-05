@@ -4,15 +4,9 @@ import React, { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 import GradualSpacing from './GradualSpacing'
-import toast from 'react-hot-toast'
 
 export default function Example() {
   const [agreed, setAgreed] = useState(false)
-  const handleClick=()=>{
-    toast.success("Message Sent");
-  };
-  
-  
 
   return (
     
@@ -22,7 +16,7 @@ export default function Example() {
       <div className="mx-auto max-w-2xl text-center mb-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl ">Doubts ? Contact Us</h2>
       </div>
-      <form action="#"  className="mx-auto mt-8 max-w-xl sm:mt-10 bg-gray-200 border border-gray-300 p-6 rounded-md shadow-sm">
+      <form action="#" method="POST" className="mx-auto mt-8 max-w-xl sm:mt-10 bg-gray-200 border border-gray-300 p-6 rounded-md shadow-sm">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -86,11 +80,9 @@ export default function Example() {
         </div>
         <div className="mt-10">
           <button
-            onClick={handleClick}
+            type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            
           >
-
             Let's talk
           </button>
         </div>

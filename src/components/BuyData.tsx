@@ -14,9 +14,9 @@ const BuyData: React.FC = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col ">
+    <div className="h-screen flex flex-col bg-gray-200">
       <Navbar2 />
-      <div className="flex flex-1 ">
+      <div className="flex flex-1 bg-gray-200">
         <Sidebar2 />
         <div className="flex-1 p-4 ">
           <h1 className="text-4xl text-black text-center font-semibold mb-4">Available Datasets</h1>

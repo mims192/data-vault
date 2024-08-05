@@ -10,12 +10,12 @@ interface Card2Props {
 
 const Card2: React.FC<Card2Props> = ({ title, description, price ,onBuy }) => {
   return (
-    <div className="card bg-gray-700   text-white w-96 shadow-xl">
+    <div className="card bg-base-100 w-96 shadow-xl">
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn hover:bg-blue-500" onClick={onBuy}>Buy for {price}</button>
+          <button className="btn btn-primary" onClick={onBuy}>Buy for {price}</button>
         </div>
       </div>
     </div>

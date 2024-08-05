@@ -18,7 +18,7 @@ const DataList: React.FC = () => {
 
     useEffect(() => {
         axios
-            .get<{ data: Dataset[] }>('https://data-vault-lmr7.vercel.app/user/show')
+            .get<{ data: Dataset[] }>('http://localhost:5000/user/show')
             .then((response) => {
                 setDataset(response.data.data);
             })
